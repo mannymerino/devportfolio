@@ -34,7 +34,8 @@
 */
 
 // Define base and accent colors
-$base-color: #3498db;
+// $base-color: #3498db;
+$base-color: #002A5C;
 $base-color-hover: darken($base-color, 10%);
 
 // Define background colors
@@ -119,6 +120,12 @@ body {
             }
 
             p {
+                color: $text;
+                font-size: 0.9em;
+                margin: 0;
+            }
+
+            li {
                 color: $text;
                 font-size: 0.9em;
                 margin: 0;
@@ -335,6 +342,13 @@ footer {
     }
 }
 
+.help {
+    color: $text;
+    font-size: .9em;
+    font-weight: 300;
+    font-style: italic;
+    padding-left: 5px;
+}
 .background-alt {
     background: $background-alt;
 }
@@ -350,7 +364,7 @@ footer {
     height: 100vh;
     min-height: 500px;
     max-height: 1080px;
-    background: url(../images/lead-bg.jpg);
+    background: url(../images/lead-bg-03.jpg);
     background-size: cover;
     padding: 15px;
     overflow: hidden;
@@ -529,6 +543,12 @@ footer {
     }
 
     p {
+        color: $text;
+        font-size: 0.9em;
+        margin: 0;
+    }
+
+    li {
         color: $text;
         font-size: 0.9em;
         margin: 0;
@@ -998,4 +1018,17 @@ footer {
         }
     }
 
+}
+
+.fa-smile-o {
+    position: relative;
+}
+.fa-smile-o:before {
+    content: "\f111";
+    color: #f1c40f;
+}
+.fa-smile-o:after {
+    left: 0;
+    position: absolute;
+    content: "\f118";
 }
